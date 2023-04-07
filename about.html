@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@1,400;1,700&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="all">
+        <header class="header">
+
+
+
+
+            <a class="logo" href="index.html">
+                <img src="img/logo.svg" alt="logotype">
+            </a>
+            <ul class="menu">
+                <li class="menu_list"><a class="menu_link " href="index.html"> Главная </a></li>
+                <li class="menu_list"><a class="menu_link" href="students.html"> Студенты </a></li>
+                <li class="menu_list"><a class="menu_link menu_link_active" href="about.html"> О курсе </a></li>
+                <li class="menu_list"><a class="menu_link" href="contacts.html"> Контакты </a></li>
+            </ul>
+            <button class="button">Войти</button>
+
+        </header>
+
+        <!-- окно -->
+        <div class="block_mainn">
+            <div class="block_main">
+                <div class="block">
+                    <div class="block_0">Войти на сайт</div>
+                    <div class="block_1">
+                        <input class="block_text_1" type="email" placeholder="Логин" required>
+                    </div>
+                    <div class="block_2">
+                        <input class="block_text_1" type="password" placeholder="Пароль" required>
+                    </div>
+                    <button class="btn">Войти</button>
+                </div>
+            </div>
+        </div>
+        <!-- окно -->
+
+
+        <main class="content_about">
+
+            <h2 class="about_name">О курсе 📱</h2>
+            <p class="about_curse">Посмотрите видео о нас</p>
+            <div class="about_video_about"> <img class="about_video" src="img/video 1.png" alt="video"></div>
+
+
+
+
+
+        </main>
+    </div>
+    <footer class="footer">
+        2023 &copy;<a class="footer_text" href="#"> учебный центр </a>
+    </footer>
+
+
+    <!-- кнопка 2 -->
+
+
+    <script>
+        const buttonLL = document.querySelector('.button');
+        const buttonEL = document.querySelector('.btn');
+        const blockEL = document.querySelector('.block');
+
+        buttonEL.addEventListener('click', function (e) {
+            // blockEL.classList.dda('visible');
+            blockEL.classList.toggle('block1');
+        });
+        buttonLL.addEventListener('click', function (e) {
+            blockEL.classList.toggle('block1');
+        });
+
+
+
+    </script>
+    <!-- кнопка 2 -->
+    <!-- visible -->
+</body>
+
+</html>
